@@ -1,120 +1,82 @@
 # Multi-Agent-Financial-Intelligence-System
-📊 Multi-Agent Financial Intelligence System
-Overview
+**Multi-Agent Financial Intelligence System
+Overview**
 
 This project implements a multi-agent AI system that autonomously gathers, analyzes, and summarizes financial analyst recommendations and latest company news for publicly traded stocks (e.g., NVIDIA – NVDA).
 
 Using Phi agents, Groq LLMs, and real-time financial and web data tools, the system collaborates across specialized agents to deliver structured, source-backed financial insights in a single response.
 
-🔍 What This Project Does
+**What This Project Does**
 
-Retrieves analyst recommendations (buy/hold/sell trends)
+* Retrieves analyst recommendations (buy/hold/sell trends)
 
-Fetches real-time stock fundamentals and prices
+* Fetches real-time stock fundamentals and prices
 
-Aggregates latest company-specific news
+* Aggregates latest company-specific news
 
-Performs web search with source attribution
+* Performs web search with source attribution
 
-Presents results in clear, tabular, markdown-formatted output
+* Presents results in clear, tabular, markdown-formatted output
 
-Demonstrates multi-agent collaboration in an AI system
+* Demonstrates multi-agent collaboration in an AI system
 
-🧠 System Architecture
+System Architecture
 
 The project is built using three AI agents, each with a distinct responsibility:
 
-1. Web Search Agent
+**1. Web Search Agent**
 
-Searches the web using DuckDuckGo
+* Searches the web using DuckDuckGo
 
-Gathers relevant company news
+* Gathers relevant company news
 
-Always includes sources for traceability
+* Always includes sources for traceability
 
-2. Finance AI Agent
-
+**2. Finance AI Agent**
 Uses Yahoo Finance APIs
 
-Retrieves:
+Retrieves:Stock price data, Analyst recommendations, Company fundamentals, Latest financial news, Displays outputs in structured tables
 
-Stock price data
+**3. Multi-Agent Coordinator**
 
-Analyst recommendations
+* Orchestrates collaboration between agents
 
-Company fundamentals
+* Merges financial data and web insights
 
-Latest financial news
+* Ensures consistent formatting and sourcing
 
-Displays outputs in structured tables
+**Technologies Used**
 
-3. Multi-Agent Coordinator
+* Python
 
-Orchestrates collaboration between agents
+* Phi Framework (Agent orchestration)
 
-Merges financial data and web insights
+* Groq LLM (LLaMA-3 70B)
 
-Ensures consistent formatting and sourcing
+* Yahoo Finance API
 
-🛠️ Technologies Used
+* DuckDuckGo Search Tool
 
-Python
+* Markdown-based output rendering
 
-Phi Framework (Agent orchestration)
-
-Groq LLM (LLaMA-3 70B)
-
-Yahoo Finance API
-
-DuckDuckGo Search Tool
-
-Markdown-based output rendering
+<img width="794" height="406" alt="image" src="https://github.com/user-attachments/assets/1f0c43fe-47b3-4fdd-a355-2d2d05dfe60a" />
 
 
-
-▶️ How to Run the Project
-
-Install Dependencies
-
-pip install -r requirements.txt
+<img width="815" height="374" alt="image" src="https://github.com/user-attachments/assets/eb8e9b28-6f00-44a4-b79c-0a1323a41fcd" />
 
 
-Run the Agent System
+**Example Use Case**
 
-multi_ai_agent.print_response(
-    "Summarize analyst recommendation and share the latest news for NVDA",
-    stream=True
-)
+**This system can be used by:**
+
+* Financial analysts for quick stock sentiment checks
+
+* Investors tracking analyst confidence and news momentum
+
+* Data scientists exploring multi-agent AI architectures
+
+* Engineers building AI-powered decision support systems
 
 
-View Output
-
-Analyst recommendations in tables
-
-Latest news with sources
-
-Combined insights from multiple agents
-
-📈 Example Use Case
-
-This system can be used by:
-
-Financial analysts for quick stock sentiment checks
-
-Investors tracking analyst confidence and news momentum
-
-Data scientists exploring multi-agent AI architectures
-
-Engineers building AI-powered decision support systems
-
-🚀 Key Learning Outcomes
-
-Designing collaborative multi-agent systems
-
-Integrating LLMs with real-time financial APIs
-
-Structuring AI outputs for business readability
-
-Implementing tool-augmented reasoning with agents
 
 
