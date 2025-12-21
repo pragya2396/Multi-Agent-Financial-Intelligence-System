@@ -70,11 +70,7 @@ DuckDuckGo Search Tool
 
 Markdown-based output rendering
 
-📁 Project Structure
-├── agents.py              # Agent definitions and configurations
-├── main.py                # Entry point to run the multi-agent system
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation
+
 
 ▶️ How to Run the Project
 
@@ -121,14 +117,4 @@ Structuring AI outputs for business readability
 
 Implementing tool-augmented reasoning with agents
 
-📌 Future Enhancements
 
-Add sentiment analysis for news articles
-
-Support multiple tickers in one query
-
-Export results to PDF or PowerPoint
-
-Add caching to reduce API calls
-
-Deploy as a web app or API service
